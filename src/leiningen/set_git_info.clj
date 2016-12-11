@@ -25,10 +25,10 @@
 
 (defmethod update-file :default [_ path search-regex replace-value]
   (with-updatable-file path
-    (as-> path $
-          (slurp $)
-          (clojure.string/replace $ search-regex replace-value)
-          (spit path $))))
+                       (as-> path $
+                             (slurp $)
+                             (clojure.string/replace $ search-regex replace-value)
+                             (spit path $))))
 
 (defmethod update-file :dry-run [_ path search-regex replace-value]
   (with-updatable-file path

@@ -17,7 +17,6 @@
        ~test-body
        (is (= ~expected-msgs @messages#)))))
 
-
 (deftest set-git-info-test
 
   (testing "Test updates to file"
@@ -39,6 +38,7 @@
                      (set-git-info {:root "." :set-git-info [{:path "./not-there"}]}))))
 
 (deftest test-dry-run
+
   (testing "Test dryrun with file warning"
     (expect-messages warn
                      ["Failed to update: ./not-there"]
@@ -57,8 +57,8 @@
                          info expected-messages
                          (set-git-info project ":dry-run")))))))
 
-
 (deftest test-usage
+
   (testing "invalid arg"
     (expect-messages
       info
@@ -66,6 +66,7 @@
       (set-git-info {:root "." :set-git-info [{:path "./not-there"}]} "foo bar"))))
 
 (deftest test-str-format
+
   (is (= "1970-01-01T01:00:00+0100" (str-format (Date. 0))))
   (is (= "1, 2, 3" (str-format (take 3 [1 2 3]))))
   (is (= "1, 2, 3" (str-format [1 2 3]))))
