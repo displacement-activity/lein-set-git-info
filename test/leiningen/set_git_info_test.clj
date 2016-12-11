@@ -67,7 +67,7 @@
 
 (deftest test-str-format
 
-  (is (= "1970-01-01T01:00:00+0100" (str-format (Date. 0))))
+  (is (= "1970-01-01T00:00:00+0000" (str-format (Date. 0))))
   (is (= "1, 2, 3" (str-format (take 3 [1 2 3]))))
   (is (= "1, 2, 3" (str-format [1 2 3]))))
 

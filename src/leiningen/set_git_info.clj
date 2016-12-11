@@ -5,7 +5,7 @@
             [clojure.string :as s])
   (:import (java.io File)
            (clojure.lang IPersistentCollection)
-           (java.util Date)
+           (java.util Date TimeZone)
            (java.text SimpleDateFormat)))
 
 (defn last-commit-info [root]
@@ -42,7 +42,10 @@
 (defmulti str-format class)
 
 (defmethod str-format IPersistentCollection [c] (s/join ", " c))
-(defmethod str-format Date [d] (.format (SimpleDateFormat. "yyyy-MM-dd'T'HH:mm:ssZ") d))
+(defmethod str-format Date [d]
+  (let [sdf (SimpleDateFormat. "yyyy-MM-dd'T'HH:mm:ssZ")
+        _ (.setTimeZone sdf (TimeZone/getTimeZone "UTC"))]
+    (.format sdf d)))
 (defmethod str-format :default [s] (str s))
 
 (defn set-git-info
