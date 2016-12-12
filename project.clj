@@ -1,6 +1,6 @@
-(defproject set-git-info "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+(defproject lein-set-git-info "1.0.0-SNAPSHOT"
+  :description "A Leiningen plugin to inject git commit information into project files."
+  :url "https://github.com/displacement-activity/lein-set-git-info"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :eval-in-leiningen true

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module cursive.leiningen.project.LeiningenProjectsManager.displayName="lein-set-git-info:1.0.0-SNAPSHOT" cursive.leiningen.project.LeiningenProjectsManager.isLeinModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dev-resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Leiningen: clj-jgit:0.8.9" level="project" />
+    <orderEntry type="library" name="Leiningen: clojure-complete:0.2.4" level="project" />
+    <orderEntry type="library" name="Leiningen: com.googlecode.javaewah/JavaEWAH:0.7.9" level="project" />
+    <orderEntry type="library" name="Leiningen: com.jcraft/jsch:0.1.53" level="project" />
+    <orderEntry type="library" name="Leiningen: commons-codec:1.4" level="project" />
+    <orderEntry type="library" name="Leiningen: commons-logging:1.1.1" level="project" />
+    <orderEntry type="library" name="Leiningen: fs:1.3.2" level="project" />
+    <orderEntry type="library" name="Leiningen: leiningen:standalone-2.6.1" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.commons/commons-compress:1.3" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.httpcomponents/httpclient:4.1.3" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.httpcomponents/httpcore:4.1.4" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/clojure:1.4.0" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/tools.nrepl:0.2.12" level="project" />
+    <orderEntry type="library" name="Leiningen: org.eclipse.jgit/org.eclipse.jgit.java7:3.7.0.201502260915-r" level="project" />
+    <orderEntry type="library" name="Leiningen: org.eclipse.jgit:3.7.0.201502260915-r" level="project" />
+    <orderEntry type="library" name="Leiningen: org.slf4j/slf4j-api:1.7.2" level="project" />
+  </component>
+</module>
