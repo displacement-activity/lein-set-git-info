@@ -4,5 +4,6 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :eval-in-leiningen true
-  :dependencies [[clj-jgit "0.8.9"]]
+  :dependencies [[clj-jgit "0.8.9"]
+                 [org.slf4j/slf4j-nop "1.7.22"]]
   :lein-release {:deploy-via :clojars})
