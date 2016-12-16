@@ -6,7 +6,7 @@ A Leiningen plugin to inject git commit information into project files.
 
 ## Usage
 
-Put `[org.clojars.displacement-activity/lein-set-git-info "1.0.1"]` into the `:plugins` vector of your `:user`
+Put `[org.clojars.displacement-activity/lein-set-git-info "1.0.2"]` into the `:plugins` vector of your `:user`
 profile.
 
 Provide details of files to update in `project.clj` e.g.
