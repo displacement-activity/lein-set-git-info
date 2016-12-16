@@ -1,4 +1,4 @@
-(defproject org.clojars.displacement-activity/lein-set-git-info "1.0.2-SNAPSHOT"
+(defproject org.clojars.displacement-activity/lein-set-git-info "1.0.2"
   :description "A Leiningen plugin to inject git commit information into project files."
   :url "https://github.com/displacement-activity/lein-set-git-info"
   :license {:name "Eclipse Public License"
